@@ -1,0 +1,40 @@
+{
+  "name": "@joeypacks/jsonapi-starter",
+  "version": "0.0.1",
+  "main": "src/app.ts",
+  "license": "MIT",
+  "author": {
+    "name": "Joel A. Villarreal Bertoldi",
+    "url": "https://github.com/joelalejandro/jsonapi-starter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelalejandro/jsonapi-starter.git"
+  },
+  "scripts": {
+    "start:dev": "tsnd src/app",
+    "migrate:make": "knex migrate:make --migrations-directory ./data/migrations -x ts",
+    "migrate:latest": "knex migrate:latest --migrations-directory ./data/migrations --knexfile ./knexfile.ts",
+    "migrate:rollback": "knex migrate:rollback --migrations-directory ./data/migrations --knexfile ./knexfile.ts",
+    "seed:make": "knex seed:make --knexfile ./knexfile.ts -x ts",
+    "seed:run": "knex seed:run --knexfile ./knexfile.ts"
+  },
+  "devDependencies": {
+    "@types/knex": "^0.16.1",
+    "@types/koa": "^2.0.48",
+    "@types/uuid": "^3.4.4",
+    "ts-node-dev": "^1.0.0-pre.39",
+    "tslint": "^5.17.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "@ebryn/jsonapi-ts": "^0.1.45",
+    "knex": "^0.17.3",
+    "logepi": "^1.0.8",
+    "pg": "^7.11.0",
+    "uuid": "^3.3.2"
+  }
+}
