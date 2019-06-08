@@ -1,6 +1,6 @@
 {
   "name": "@joeypacks/jsonapi-starter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "src/app.ts",
   "license": "MIT",
   "author": {
