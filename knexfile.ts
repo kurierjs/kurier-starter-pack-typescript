@@ -1,6 +1,6 @@
 import { resolve } from "path";
 
-export default {
+module.exports = {
   development: {
     client: "pg",
     connection: "postgresql://postgres:postgres@localhost:5432/postgres",

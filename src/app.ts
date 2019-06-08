@@ -9,7 +9,7 @@ import * as Koa from "koa";
 import * as Knex from "knex";
 import { KoaLoggingMiddleware as logs, Log } from "logepi";
 
-import knexConfig from "../knexfile";
+import knexConfig = require("../knexfile");
 import { permissionProvider, roleProvider } from "./providers";
 import { User } from "./resources";
 import { login } from "./services/user-management";
