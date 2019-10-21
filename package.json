@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@ebryn/jsonapi-ts": "^0.1.45",
-    "knex": "^0.17.3",
+    "knex": "^0.19.5",
     "logepi": "^1.0.8",
     "pg": "^7.11.0",
     "uuid": "^3.3.2"
