@@ -10,6 +10,14 @@ Features include:
 - Postgres database available via `docker-compose`
 - HTTP logs via [`logepi`](https://github.com/joelalejandro/logepi)
 
+## How to use
+
+[Click right here](https://github.com/kurierjs/kurier-starter-pack-typescript/generate) or use GitHub CLI:
+
+```bash
+gh repo create my-api -p kurierjs/kurier-starter-pack-typescript
+```
+
 ## License
 
 MIT
