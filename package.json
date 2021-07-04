@@ -1,15 +1,15 @@
 {
-  "name": "@joeypacks/jsonapi-starter",
+  "name": "@kurier/starter-kit-typescript",
   "version": "0.0.2",
   "main": "src/app.ts",
   "license": "MIT",
   "author": {
     "name": "Joel A. Villarreal Bertoldi",
-    "url": "https://github.com/joelalejandro/jsonapi-starter"
+    "url": "https://github.com/kurierjs/kurier-starter-kit-typescript"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joelalejandro/jsonapi-starter.git"
+    "url": "git+https://github.com/kurierjs/kurier-starter-kit-typescript"
   },
   "scripts": {
     "start:dev": "tsnd src/app",
@@ -21,20 +21,23 @@
   },
   "devDependencies": {
     "@types/knex": "^0.16.1",
-    "@types/koa": "^2.0.48",
+    "@types/koa": "^2.13.3",
     "@types/uuid": "^3.4.4",
-    "ts-node-dev": "^1.0.0-pre.39",
-    "tslint": "^5.17.0",
-    "tslint-config-airbnb": "^5.11.1",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-plugin-prettier": "^2.0.1",
-    "typescript": "^3.5.1"
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
   },
   "dependencies": {
-    "@ebryn/jsonapi-ts": "^0.1.45",
-    "knex": "^0.17.3",
+    "knex": "^0.95.6",
+    "kurier": "^1.2.0-alpha3",
     "logepi": "^1.0.8",
-    "pg": "^7.11.0",
+    "pg": "^8.6.0",
     "uuid": "^3.3.2"
   }
 }

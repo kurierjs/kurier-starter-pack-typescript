@@ -1,11 +1,11 @@
-import { User as JsonApiUser, Password } from "@ebryn/jsonapi-ts";
+import { User as JsonApiUser, Password } from 'kurier';
 
 export class User extends JsonApiUser {
   static schema = {
     attributes: {
       username: String,
-      password: Password
+      password: Password,
     },
-    relationships: {}
+    relationships: {},
   };
 }

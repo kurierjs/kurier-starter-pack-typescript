@@ -1,6 +1,15 @@
-version: "3"
+version: "3.7"
+
 services:
   postgres:
-    build: .
+    image: "postgres:13"
+    environment:
+      # POSTGRES_DB: "doctadevs"
+      # POSTGRES_USER: "doctadevs"
+      # POSTGRES_PASSWORD: "doctadevs"
+    volumes:
+      - "./postgres/postgres.conf:/usr/local/etc/postgres/postgres.conf"
+      - "./postgres/data:/var/lib/postgresql/data:delegated"
+    command: "postgres -c config_file=/usr/local/etc/postgres/postgres.conf"
     ports:
       - "5432:5432"
