@@ -20,7 +20,7 @@ gh repo create my-api -p kurierjs/kurier-starter-pack-typescript
 
 ## Usage
 
-1. Run `npm install` or `yarn` to install all dependencies.
+1. Run `npm install` to install all dependencies.
 2. Run `docker-compose up -d` to start a daemonized Docker container with a Postgres database.
 3. Run `yarn start:dev` and execute a request towards `http://localhost:3000`.
 
